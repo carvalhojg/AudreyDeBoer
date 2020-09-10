@@ -2,10 +2,7 @@
 /**
  * The template for displaying comments.
  *
- * The area of the page that contains both current comments
- * and the comment form.
- *
- * @package Argent
+ * @package RED_Starter_Theme
  */
 
 /*
@@ -24,59 +21,55 @@ if ( post_password_required() ) {
 
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
-			<?php
-				printf(
-					esc_html( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'argent' ) ),
-					number_format_i18n( get_comments_number() ),
-					'<span>' . get_the_title() . '</span>'
-				);
-			?>
+			<?php esc_html( comments_number( '0 Comments', '1 Comment', '% Comments' ) ); ?>
 		</h2>
 
-		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
+		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 		<nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
-			<h2 class="screen-reader-text"><?php _e( 'Comment navigation', 'argent' ); ?></h2>
+			<h2 class="screen-reader-text"><?php esc_html( 'Comment navigation' ); ?></h2>
 			<div class="nav-links">
 
-				<div class="nav-previous"><?php previous_comments_link( esc_html__( '&laquo; Older Comments', 'argent' ) ); ?></div>
-				<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments &raquo;', 'argent' ) ); ?></div>
+				<div class="nav-previous"><?php previous_comments_link( esc_html( 'Older Comments' ) ); ?></div>
+				<div class="nav-next"><?php next_comments_link( esc_html( 'Newer Comments' ) ); ?></div>
 
 			</div><!-- .nav-links -->
 		</nav><!-- #comment-nav-above -->
-		<?php endif; // check for comment navigation ?>
+		<?php endif; // Check for comment navigation. ?>
 
 		<ol class="comment-list">
 			<?php
 				wp_list_comments( array(
-					'avatar_size'=> 50,
-					'style'      => 'ol',
-					'short_ping' => true,
-					'callback'	 => 'argent_comment',
+					'callback' => 'red_starter_comment_list'
 				) );
 			?>
 		</ol><!-- .comment-list -->
 
-		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
+		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 		<nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
-			<h2 class="screen-reader-text"><?php _e( 'Comment navigation', 'argent' ); ?></h2>
+			<h2 class="screen-reader-text"><?php esc_html( 'Comment navigation' ); ?></h2>
 			<div class="nav-links">
 
-				<div class="nav-previous"><?php previous_comments_link( esc_html__( '&laquo; Older Comments', 'argent' ) ); ?></div>
-				<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments &raquo;', 'argent' ) ); ?></div>
+				<div class="nav-previous"><?php previous_comments_link( esc_html( 'Older Comments' ) ); ?></div>
+				<div class="nav-next"><?php next_comments_link( esc_html( 'Newer Comments' ) ); ?></div>
 
 			</div><!-- .nav-links -->
 		</nav><!-- #comment-nav-below -->
-		<?php endif; // check for comment navigation ?>
+		<?php endif; // Check for comment navigation. ?>
 
-	<?php endif; // have_comments() ?>
+	<?php endif; // Check for have_comments(). ?>
 
 	<?php
 		// If comments are closed and there are comments, let's leave a little note, shall we?
-		if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
+		if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<p class="no-comments"><?php _e( 'Comments are closed.', 'argent' ); ?></p>
+		<p class="no-comments"><?php esc_html( 'Comments are closed.' ); ?></p>
 	<?php endif; ?>
 
-	<?php comment_form(); ?>
+	<?php comment_form( array(
+		'title_reply'          => esc_html( 'Post a Comment' ),
+		'comment_notes_before' => wp_kses( '<p class="comment-notes">Want to join the discussion? Feel free to contribute!</p>', array( 'p' => array( 'class' => '' ) ) ),
+		'label_submit'         => esc_html( 'Submit' ),
+		'cancel_reply_link'    => esc_html( '[Cancel reply]' )
+	) ); ?>
 
 </div><!-- #comments -->
