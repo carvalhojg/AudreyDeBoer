@@ -1,8 +1,8 @@
 {
   "name": "redstarter",
   "version": "1.1.0",
-  "description": "A starter theme for RED students, based on Underscores.",
-  "author": "yourname",
+  "description": "Website build to artist client.",
+  "author": "Joao Gabriel Santos",
   "dependencies": {},
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -30,11 +30,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/redacademy/redstarter.git"
+    "url": "git+https://github.com/carvalhojg/AudreyDeBoer.git"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/redacademy/redstarter/issues"
+    "url": "https://github.com/carvalhojg/AudreyDeBoer/issues"
   },
-  "homepage": "https://github.com/redacademy/redstarter#readme"
+  "homepage": "https://github.com/carvalhojg/AudreyDeBoer#readme"
 }
