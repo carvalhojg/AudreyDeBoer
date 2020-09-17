@@ -2,4 +2,9 @@ header {
     display: flex;
     justify-content: space-around;
     margin: 5%;
+
+    .main-navigation {
+        display: flex;
+        justify-content: flex-end;
+    }
 }
