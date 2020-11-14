@@ -32,3 +32,17 @@ body {
         }
     }
 }
+
+/* Gerneral content */
+.entry-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Listen Now Section */
+.listen-now {
+    width: 83%;
+    padding-bottom: 3%;
+    border: solid 6px #000000;
+}
