@@ -669,7 +669,34 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
+/* Background Image */
+body {
+  background: url(../../images/Background_Image.JPG) no-repeat center center fixed;
+  background-size: cover; }
+
+/* Homepage */
+.homepage .attachment-thumbnail {
+  height: 100%;
+  position: absolute;
+  width: cover;
+  z-index: 000; }
+
+.homepage form .your-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.homepage form .wpcf7-submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;

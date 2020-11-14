@@ -2,4 +2,33 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
+/* Background Image */
+body { 
+    background: url(../../images/Background_Image.JPG) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+/* Homepage */
+.homepage {
+    .attachment-thumbnail {
+        height: 100%;
+        position: absolute;
+        width: cover;
+        z-index: 000;
+    }
+
+    form {
+        .your-email{
+            display: flex;
+            justify-content: center;
+        }
+
+        .wpcf7-submit {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

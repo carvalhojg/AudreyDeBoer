@@ -23,7 +23,7 @@
 			<header id="masthead" class="site-header" role="banner">
 				<div class="logo">
 					<a href="<?php echo get_home_url(); ?>">
-						<img src="" alt="Logo">
+						<img src="/images/audreydeboer-wordmark-black.png" alt="Logo">
 					</a>
 				</div><!-- logo -->
 
