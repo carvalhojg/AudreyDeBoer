@@ -432,6 +432,9 @@ a {
     padding: 0;
     background-color: transparent;
     width: 20%; }
+    @media (min-width: 1240px) {
+      .main-navigation .menu-toggle {
+        width: 10%; } }
   .main-navigation ul {
     display: none;
     list-style: none;

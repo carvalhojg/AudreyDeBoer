@@ -37,6 +37,10 @@ a {
 		padding: 0;
 		background-color: transparent;
 		width: 20%;
+
+		@include desktop {
+			width: 10%;
+		}
 	}
 
 	ul {
