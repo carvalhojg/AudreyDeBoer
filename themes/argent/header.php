@@ -31,7 +31,7 @@
 					
 					<div class="logo">
 						<a href="<?php echo get_home_url(); ?>">
-							<img src="../argent/images/audreydeboer-wordmark-black.png" alt="Logo">
+							<img src="https://imagery.zoogletools.com/u/328471/4f6d77195abe651bc35cada56139fd7eae23a87c/original/audreydeboer-wordmark-black.png" alt="Logo">
 						</a>
 					</div><!-- logo -->
 				</header><!-- #masthead -->
