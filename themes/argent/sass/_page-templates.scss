@@ -52,3 +52,21 @@ body {
         }
     }
 }
+
+/* Contact Us */
+.page-contact {
+    .site-main {
+        margin: 9%;
+
+        .entry-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            h2 {
+                font-size: 45px;
+                color: #ffffff;
+            }
+        }
+    }
+}
