@@ -691,6 +691,14 @@ body {
   width: cover;
   z-index: 000; }
 
+.homepage .latest-release {
+  margin: 0; }
+
+@media (min-width: 1240px) {
+  .homepage h2 {
+    font-size: 40px;
+    margin-top: 10%; } }
+
 /* Gerneral content */
 .entry-content {
   display: -webkit-box;
@@ -709,6 +717,9 @@ body {
   width: 83%;
   padding-bottom: 3%;
   border: solid 6px #000000; }
+  @media (min-width: 1240px) {
+    .listen-now {
+      width: 38%; } }
 
 /* Bio */
 .page-bio .site-main {
@@ -745,6 +756,23 @@ body {
     .page-contact .site-main .entry-content h2 {
       font-size: 45px;
       color: #ffffff; }
+
+/* Music */
+.page-music .title {
+  font-size: 25px; }
+
+@media (min-width: 1240px) {
+  .page-music .entry-content {
+    display: grid;
+    grid-template-areas: "header header header" "main main main"; }
+    .page-music .entry-content p {
+      font-size: 75px;
+      grid-area: header; }
+    .page-music .entry-content figure {
+      width: 70%; } }
+
+.page-music .entry-content figure {
+  width: 60%; }
 
 header {
   display: -webkit-box;
