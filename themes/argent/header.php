@@ -29,11 +29,11 @@
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) );?>
 				</nav> <!-- site-navigation -->
 					
-					<div class="logo">
-						<a href="<?php echo get_home_url(); ?>">
-							<img src="https://imagery.zoogletools.com/u/328471/4f6d77195abe651bc35cada56139fd7eae23a87c/original/audreydeboer-wordmark-black.png" alt="Logo">
-						</a>
-					</div><!-- logo -->
-				</header><!-- #masthead -->
+				<div class="logo">
+					<a href="<?php echo get_home_url(); ?>">
+						<img src="https://imagery.zoogletools.com/u/328471/4f6d77195abe651bc35cada56139fd7eae23a87c/original/audreydeboer-wordmark-black.png" alt="Logo">
+					</a>
+				</div><!-- logo -->
+			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
