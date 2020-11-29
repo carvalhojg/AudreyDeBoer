@@ -434,7 +434,7 @@ a {
     width: 20%; }
     @media (min-width: 1240px) {
       .main-navigation .menu-toggle {
-        width: 10%; } }
+        width: 7%; } }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -765,3 +765,6 @@ header {
       width: 27vw; }
   header .logo {
     width: 100%; }
+    @media (min-width: 1240px) {
+      header .logo {
+        width: 50%; } }
