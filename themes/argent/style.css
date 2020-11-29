@@ -774,6 +774,14 @@ body {
 .page-music .entry-content figure {
   width: 60%; }
 
+/* Press */
+.page-press .entry-content {
+  margin: 10%; }
+  @media (min-width: 1240px) {
+    .page-press .entry-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; } }
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;

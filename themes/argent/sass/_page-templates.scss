@@ -114,3 +114,17 @@ body {
         }
     }
 }
+
+/* Press */
+.page-press {
+    .entry-content {
+        margin: 10%;
+
+        @include desktop {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+
+    }
+}
