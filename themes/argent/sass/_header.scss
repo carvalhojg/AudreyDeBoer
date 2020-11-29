@@ -5,6 +5,11 @@ header {
 
     .main-navigation {
         display: flex;
-        justify-content: flex-end;
+        align-items: flex-start;
+
+        .menu-menu-1-container {
+            padding: 20% 0 10% 0;
+            width: 27vw;
+        }
     }
 }
